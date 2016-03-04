@@ -65,8 +65,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="LineChartTests.cs" />
+    <Compile Include="CanvasExtensions.cs" />
+    <Compile Include="HorizontalAxisTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TitleTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -79,6 +81,12 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="HorizontalAxisTests.Draw_WhenAnArrayOfCategories_ThenDrawsTheCategoriesAtTheBottom.approved.png" />
+    <Content Include="TitleTests.Draw_WhenGivenJustTheText_ThenDrawsTheTitleOnTop.approved.png" />
+    <Content Include="TitleTests.Draw_WhenGivenTextAndSubtitle_ThenBothLinesAreDrawnOnTop.approved.png" />
+    <Content Include="TitleTests.Draw_WhenTheBrushesHaveChanged_ThenBothLinesAreDrawnWithDifferentColors.approved.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
